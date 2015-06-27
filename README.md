@@ -6,4 +6,4 @@ As I mentioned in day1, I would write blogs to record the process of creating th
 
 I would like to use a good-looking style which is perfect to read, so that's it, the day2 project:
 ###day2 project
->Hongbo blog template
+>[Hongbo blog template](http://angularfox.com/hongbo-365-blogs/index.html)

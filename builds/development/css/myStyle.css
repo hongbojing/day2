@@ -180,6 +180,7 @@ a:hover
     display: inline-block;
     margin-bottom: 0;
     text-align: center;
+    text-indent: 0;
     vertical-align: middle;
     touch-action: manipulation;
     cursor: pointer;
