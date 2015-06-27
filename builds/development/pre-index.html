@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="//assets.webadmin.ufl.edu/fonts/fonts.css">
+    <link rel="stylesheet" href="css/myStyle.css">
+    <link rel="stylesheet" href="css/anotherstyle.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li class="home"><a href="#">Home</a></li>
+                <li class="tutorials"><a class="active" href="#">Tutorials</a></li>
+                <li class="about"><a href="#">About</a></li>
+                <li class="news"><a href="#">Newsletter</a></li>
+                <li class="contact"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <h1>
+        Lorem ipsum
+    </h1>
+    <h2>
+        Lorem ipsum
+    </h2>
+    <p class="test-quadon">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, dolor sit amet interdum ultricies, tortor purus tempor mauris, sed hendrerit quam neque ut libero. Proin eget nibh faucibus, ullamcorper mi sed, tincidunt arcu. Etiam at nisi ut erat tincidunt cursus cursus et est. Quisque a augue ut tellus volutpat ultrices eget malesuada leo. Pellentesque a arcu erat. Sed a leo nulla. Mauris accumsan gravida velit ac euismod. Cras tristique nec magna sit amet lobortis. Nam elementum nisi in sem efficitur luctus. In dictum imperdiet lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla commodo augue ac finibus. Etiam id arcu consequat, finibus lorem ac, ullamcorper tortor. Sed sit amet magna id quam euismod mattis. Vestibulum ultricies ex vitae nisi laoreet, ultricies pharetra risus pulvinar.
+        ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    </p>
+    <h3>
+        Lorem ipsum
+    </h3>
+    <h4>
+        Lorem ipsum
+    </h4>
+    <p class="not-found">
+       ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        The width of the column must be proportioned to the size of the type. Overlong columns are wearying to the eye and also have an adverse psychological effect. Overshort columns can also be disturbing because they interrupt the flow of reading and put the reader off by obliging the eye to change lines too rapidly.
+        —Grid Systems in Graphic Design, Josef Müller-Brockmann
+    </p>
+    <div>
+        <input type="text">
+        <input type="submit">
+        <input type="reset">
+        <textarea name="text-test" id="test1" cols="30" rows="10"></textarea>
+    </div>
+    <h5>About font-size from EM to PX</h5>
+    <P>       ABCDEFGHIJKLMNOPQRSTUVWXYZ</P>
+    <p>All browsers convert relative EM sizes to pixel sizes, and most users have browser defaults at 16px.</p>
+    <p>In my most recent text-sizing work, I used the following calculation: 14px/16px = .875, 18px/16px = 1.125. So my default text at 1 em would translate to 16px for most users, and my small text I sized at .875em which I can trust to result in 14px for most users, while my large text I sized at 1.125em which I can trust to result in 18px. Note that I avoid going lower than 12px for default sizing at all costs.</p>
+    <div class="box">
+        <div class="box-left"></div>
+        <div class="box-right"></div>
+    </div>
+
+    <h2>Alphabetical Properties </h2>
+    <p>I don't know where I got the idea, but I have been alphabetizing my CSS properties for months now, and believe it or not, it makes specific properties much easier to find. Here's an example:</p>
+    <pre>
+        body {
+            background:#fdfdfd;
+            color:#333;
+            font-size:1em;
+            line-height:1.4;
+            margin:0;
+            padding:0;
+        }
+    </pre>
+    <h2>use margin:0 auto to center layout</h2>
+    <div class="box">
+        <div class="center"></div>
+    </div>
+
+    <div class="box-box">
+        <div class="center-center"></div>
+    </div>
+    <h2>css short hand</h2>
+    <h4>1 Background syntax</h4>
+    <pre>
+        element{
+            background-color:      color || #hex || (rgb / % || 0-255);
+            background-image:      url(URL);
+            background-repeat:     repeat || repeat-x || repeat-y || no-repeat;
+            background-position:   X Y || (top || bottom || center) (left || right || center);
+            background-attachment: scroll || fixed;
+        }
+    </pre>
+    <h4>background shorthand</h4>
+    <pre>
+        element{
+            background: #fff url(image.png) no-repeat 20px 10px fixed;
+        }
+    </pre>
+    <h4>if you leave some values blank, the followings are the default value</h4>
+    <pre>
+        element{
+            background-color:      transparent;
+            background-image:      none;
+            background-reapeat:    repeat;
+            background-position:   top left;
+            background-attachment: scroll;
+        }
+    </pre>
+    <h4>So, the following code:</h4>
+    <pre>
+        element{
+            background:red url(image.png);
+        }
+    </pre>
+    <h4>is equal to the following:</h4>
+    <pre>
+        element{
+            background:red url(image.png) repeat top left scroll;
+        }
+    </pre>
+    <h4>2 FONT syntax</h4>
+    <pre>
+        element{
+            font-style:   normal || italic || oblique;
+            font-variant: normal || small-caps;
+            font-weight:  normal || bold || bolder || lighter || (100-900);
+            font-size:    (number + unit) || (xx-small - xx-large);
+            line-height:  normal || (number + unit);
+            font-family:  name, "more names";
+        }
+    </pre>
+    <h4>default value</h4>
+    <pre>
+        element{
+            font-style:   normal;
+            font-variant: normal;
+            font-weight:  normal;
+            font-size:    inherit;
+            line-height:  normal;
+            font-family:  inherit;
+        }
+    </pre>
+    <h4>so if you leave any values black, you would get this</h4>
+    <pre>
+        element{
+            font: normal normal normal inherit normal inherit;
+        }
+    </pre>
+    <h4>what tricky about font is: some element's default setting is not "normal", i.e.</h4>
+    <pre>
+        strong{
+            font:12px verdana;
+        }
+    </pre>
+    <h4>You will be unexplicitly removing the font-weight:bold default browser style that is applied to strong elements</h4>
+    <h4>the following is a real world example:</h4>
+    <pre>
+        p{
+            font:bold 1em/1.2em geogia,"times new roman", serif;
+        }
+    </pre>
+    <h4>is equal to:</h4>
+    <pre>
+        p{
+            font-style:  normal;
+            font-variant:normal;
+            font-weight: bold;
+            font-size:   1em;
+            line-height: 1.2em;
+            font-family: geogia,"times new roman", serif;
+        }
+    </pre>
+    <h4>3 border syntax</h4>
+    <pre>
+        element{
+            border-width: number + unit;
+            border-style: (numerous);
+            border-color: color||#hex||(rgb/%||0-255);
+        }
+    </pre>
+    <h4 class="border-example">example</h4>
+    <pre>
+        element{
+            border: 4px groove linen;
+        }
+    </pre>
+    <h4>
+    when you use border: to shorthand, the default value for width is 3px, for color is black, but not default value for border-style, which
+    means if you leave border-style's value blank, you would get nothing;
+    </h4>
+    <h4>the following code for border setting would not work:</h4>
+    <pre>
+        p { border:10px red; }
+
+        p { border:10px; }
+
+        p { border:red; }
+
+        /* these just don't even work */
+    </pre>
+    <h4>One thing to specially take note about declaring a border without a color, the default will be 'black' unless otherwise noted through an explicit or inherited 'color' property. See the following examples:</h4>
+    <pre>
+        p {
+          border:dotted;
+          color:red;
+        }
+        /* will create a 3px dotted red border */
+        /* ----------------------------- */
+
+
+        body {
+          color:blue;
+        }
+        body p {
+          border:5px solid;
+        }
+        /* will create a 5px solid blue border */
+        /* ----------------------------- */
+    </pre>
+    <h4>4 margin, when there is 3 value</h4>
+    <pre>
+        /* adds a 50px margin to top
+        and a 10px margin to left and right
+        and a 300px margin to bottom */
+
+        element {
+          margin:50px 10px 300px;
+        }
+    </pre>
+    <h4>5 outline</h4>
+    <h4>lack of browser supporting, follows the same rule as border</h4>
+    <pre>
+        element {
+          outline-width: number+unit;
+          outline-style: (numerous);
+          outline-color: color || #hex || (rgb / % || 0-255);
+        }
+    </pre>
+    <h4>outline shorthand</h4>
+    <pre>
+        element {
+          outline:3px dotted gray;
+        }
+    </pre>
+    <h4>6 list style</h4>
+    <pre>
+        element{
+            list-style-type:     (numerous);
+            list-style-position: inside || outside;
+            list-style-image:    url(image.png);
+        }
+    </pre>
+    <h4>default values:</h4>
+    <pre>
+        element{
+            list-style-type:     disc;
+            list-style-position: outside;
+            list-style-image:    none;
+        }
+    </pre>
+    <h4>example</h4>
+
+    <pre>
+        ul li {
+          list-style:square inside url(image.png);
+        }
+
+        /* in this particular case if image.png is not available
+
+            then a square will be provided as secondary */
+    </pre>
+    <ul>
+        <li>aa</li>
+        <li>bb</li>
+        <li>cc</li>
+        <li>dd</li>
+    </ul>
+    <h2>POSiTION</h2>
+    <h4>default: static</h4>
+    <div class="static1">
+        <p>
+            <b>static</b> is the default value. An element with position: static; is not positioned in any special way.
+          A static element is said to be not positioned and an element with its position set to anything else is said to be positioned.
+        </p>
+    </div>
+    <h4>1 relative</h4>
+    <div class="relative1">
+        <p>
+            relative behaves the same as static unless you add some extra properties.
+        </p>
+    </div>
+    <div class="relative2">
+        <p>
+            Setting the top, right, bottom, and left properties of a relatively-positioned element will
+            cause it to be adjusted away from its normal position.
+            Other content will not be adjusted to fit into any gap left by the element.
+        </p>
+    </div>
+    <h4>2 fixed</h4>
+    <p>
+        A fixed element is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled.
+        As with relative, the top, right, bottom, and left properties are used.
+    </p>
+    <div class="fixed1">
+        <p>Hello, i'm fixed</p>
+    </div>
+    <h4>3 absolute</h4>
+    <p>If an absolutely-positioned element has no positioned ancestors, it uses the document body, and still moves along with page scrolling. Remember, a "positioned" element is one whose position is anything except static.</p>
+    <div class="absolute1">
+        I am absolute position, who is defined down there, I have no positioned ancestors
+    </div>
+    <div class="relative3">
+       <div class="relative1">
+           <p>I am relative1 again</p>
+       </div>
+       <div class="relative1">
+           <p>I am also relative1, seeems that absolute could cover me</p>
+       </div>
+        <div class="absolute1">
+            I have relative3 as my positioned ancestor.
+        </div>
+        <div>
+            I am the default static, seems that "absolute" does not give a shit to me and relative, it covers every thing.
+            Absolute's start point is its parent element, but mine and relative's parent are our previous one except absolute;
+        </div>
+    </div>
+    <h4>the biggest differenc of position porperties are their start point</h4>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $('.nav a').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
